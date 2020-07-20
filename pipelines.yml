@@ -31,7 +31,6 @@ pipelines:
             - echo $res_myAppRepo_commitSha
             - echo automation > test.sh
             - printenv 
-            - jfrog rt c saas --url=$int_artifactory_url --user=admin --apikey=$int_artifactory_apikey --insecure-tls
             - jfrog rt u test.sh test/test.sh --insecure-tls
  
       - name: step_2
