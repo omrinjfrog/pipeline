@@ -27,6 +27,8 @@ pipelines:
             - echo $res_myAppRepo_resourcePath
             - echo $res_myAppRepo_gitProvider_name
             - echo $res_myAppRepo_commitSha
+            - echo automation > test.sh
+            - jfrog rt u test.sh test/test.sh
  
       - name: step_2
         type: Bash
