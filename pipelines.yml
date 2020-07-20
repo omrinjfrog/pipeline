@@ -17,6 +17,8 @@ pipelines:
         configuration:
           inputResources:
             - name: myAppRepo
+          integrations:
+            - name: artifactory
         execution:
           onExecute:
             - echo $MY_MESSAGE
