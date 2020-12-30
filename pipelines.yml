@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: githubtest              
-      path: jfrog-qa/pipeline                 
+      path: omrinjfrog/pipeline                 
 
 pipelines:
   - name: pipeline_hello_world
